@@ -61,7 +61,8 @@ end
 
 group :test do
   gem 'rspec-rails', '~> 3.7'
-  gem 'factory_girl_rails'
+  # gem 'factory_girl_rails'
+  gem 'factory_bot_rails' # factory_girl_rails is deprecated.
   gem 'faker'
 end
 
