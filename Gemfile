@@ -64,6 +64,7 @@ group :test do
   # gem 'factory_girl_rails'
   gem 'factory_bot_rails' # factory_girl_rails is deprecated.
   gem 'faker'
+  gem 'shoulda-matchers'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
