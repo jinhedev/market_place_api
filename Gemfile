@@ -7,7 +7,7 @@ end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.1.6'
+gem 'rails', '~> 5.2.0'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
@@ -61,10 +61,9 @@ end
 
 group :test do
   gem 'rspec-rails', '~> 3.7'
-  # gem 'factory_girl_rails'
   gem 'factory_bot_rails' # factory_girl_rails is deprecated.
   gem 'faker'
-  gem 'shoulda-matchers'
+  gem 'shoulda-matchers', require: false
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
