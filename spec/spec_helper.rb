@@ -97,9 +97,9 @@ RSpec.configure do |config|
   # as the one that triggered the failure.
   Kernel.srand config.seed
 =end
+  config.include Request::JsonHelpers, type: :controller
+  config.include Request::HeadersHelpers, type: :controller
   config.before(:each, type: :controller) do
     include_default_accept_headers
   end
-  config.include Request::JsonHelpers, type: :controller
-  config.include Request::HeadersHelpers, type: :controller
 end
