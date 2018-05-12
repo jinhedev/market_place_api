@@ -17,7 +17,7 @@ RSpec.describe User, type: :model do
 
   describe '#generate authentication_token!' do
     it "generates a unique token" do
-      Devise.stub(:friendly_token).and_return("anuniquetoken123")
+      allow(Devise).to receive(:friendly_token).and_return("anuniquetoken123")
       @user.generate_authentication_token!
       expect(@user.auth_token).to eql "anuniquetoken123"
     end
