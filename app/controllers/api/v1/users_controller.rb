@@ -25,6 +25,7 @@ class Api::V1::UsersController < ApplicationController
   end
 
   def destroy
+    # ActiveRecord::Persistence.destroy runs the find method to fetch a row first, and it will trigger a callback, if any, before_destroy.
     user = User.find(params[:id])
     user.destroy
     head 204
