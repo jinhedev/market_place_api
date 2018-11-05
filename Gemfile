@@ -26,6 +26,8 @@ end
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails', '~> 3.7'
+  gem 'factory_bot_rails' # factory_girl_rails is deprecated.
+  gem 'faker'
 end
 
 group :development do
@@ -37,8 +39,6 @@ group :development do
 end
 
 group :test do
-  gem 'factory_bot_rails' # factory_girl_rails is deprecated.
-  gem 'faker'
   gem 'shoulda-matchers', require: false
 end
 

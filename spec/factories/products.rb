@@ -1,3 +1,5 @@
+require 'faker'
+
 FactoryBot.define do
   factory :product do
     title { Faker::Vehicle.manufacture }
