@@ -16,6 +16,7 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
   config.order = 'random'
   config.include Devise::Test::ControllerHelpers, type: :controller
+  config.include FactoryBot::Syntax::Methods
 end
 
 Shoulda::Matchers.configure do |config|
